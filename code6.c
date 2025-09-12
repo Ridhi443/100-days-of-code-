@@ -1,4 +1,4 @@
-// write a program to swap two numbers without using athird variable.
+// write a program to swap two numbers using a third variable.
 #include <stdio.h>
 int main() 
 {
@@ -13,3 +13,4 @@ printf("after swapping: a=%d ,b=%d\n" ,a,b);
 
  return 0;
 }
+
