@@ -1,0 +1,32 @@
+// Create Employee structure with nested Date structure for joining date and print details.
+#include <stdio.h>
+
+struct Date {
+    int day;
+    int month;
+    int year;
+};
+
+struct Employee {
+    char name[100];
+    int id;
+    float salary;
+    struct Date joiningDate;
+};
+
+int main() {
+    struct Employee e;
+
+    printf("Enter name, ID, salary: ");
+    scanf("%s %d %f", e.name, &e.id, &e.salary);
+    printf("Enter joining date (dd mm yyyy): ");
+    scanf("%d %d %d", &e.joiningDate.day, &e.joiningDate.month, &e.joiningDate.year);
+
+    printf("\nEmployee Details:\n");
+    printf("Name: %s\n", e.name);
+    printf("ID: %d\n", e.id);
+    printf("Salary: %.2f\n", e.salary);
+    printf("Joining Date: %02d-%02d-%04d\n", e.joiningDate.day, e.joiningDate.month, e.joiningDate.year);
+
+    return 0;
+}
